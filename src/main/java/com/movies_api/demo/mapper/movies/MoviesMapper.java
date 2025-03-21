@@ -14,6 +14,7 @@ public class MoviesMapper {
 
     public static MovieDto toDto(MovieEntity entity){
         return new MovieDto(
+            entity.getId(),
             entity.getTitle(),
             entity.getSynopsis(),
             entity.getGenre(),
